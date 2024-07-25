@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-image: url(image/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        nav {
+            border-radius: 0px 0px 30px 30px;
+            background-color: rgba(24, 24, 90,0.9);
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav > img {
+            width: 130px;
+        }
+
+        nav > .ML {
+            font-size: 40px;
+            color: rgb(180, 180, 114);
+            margin-left: 10px;
+            text-shadow: 1px 2px black;
+        }
+
+        nav > .tengah {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .tengah a {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .tengah a:hover {
+            background: #2980b9;
+            cursor: pointer;
+        }
+
+        .kata {
+            margin-top: 120px;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Trebuchet MS';
+            font-size: 80px;
+            color:skyblue;
+            text-shadow: 7px 2px rgb(55, 55, 103);
+
+            >p{
+                padding-bottom: 30px;
+            }
+        }
+        
+
+        .container {
+            width: 100%;
+            height: 400px;
+            margin: 10px auto;
+            padding: 2px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .container img {
+            width: 200px;
+            height: auto;
+            margin: 0px 8px 100px;
+            border-radius: 20px;
+        }
+
+        .container .satu, .dua, .tiga, .empat, .lima, .enam, .tujuh, .lapan {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 0px 1px;
+            height: 450px;
+            border-radius: 20px;
+            margin: 50px;
+            position: relative;
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        .container .satu:hover .text-overlay, 
+        .container .dua:hover .text-overlay, 
+        .container .tiga:hover .text-overlay, 
+        .container .empat:hover .text-overlay, 
+        .container .lima:hover .text-overlay, 
+        .container .enam:hover .text-overlay, 
+        .container .tujuh:hover .text-overlay, 
+        .container .lapan:hover .text-overlay {
+            opacity: 1;
+        }
+
+        .container .satu img:hover, 
+        .dua img:hover, 
+        .tiga img:hover, 
+        .empat img:hover, 
+        .lima img:hover, 
+        .enam img:hover, 
+        .tujuh img:hover, 
+        .lapan img:hover {
+            cursor: pointer;
+            transform: scale(0.9);
+            transition: transform 0.4s ease;
+        }
+
+        .container .satu:hover, 
+        .dua:hover, 
+        .tiga:hover, 
+        .empat:hover, 
+        .lima:hover, 
+        .enam:hover, 
+        .tujuh:hover, 
+        .lapan:hover {
+            background-color: rgba(24, 24, 90, 0.5);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <nav>
+        <img src="image/74b9d8b9108e74a8dc56333430401866.png" alt="">
+        <h1 class="ML">Mobile Legends</h1>
+        <div class="tengah">
+            <a class="home" href="#">Home</a>
+            <a class="about" href="#">About</a>
+            <a class="contact" href="#">Contact</a>
+            <a class="login" href="#">Login</a>
+        </div>
+    </nav>
+
+    <div class="kata">
+        <p>Some Hero of Mobile Legend</p>
+        <hr>
+    </div>
+    
+
+    <div class="container">
+        <div class="satu">
+            <img src="image/lance.jpg" alt="">
+            <div class="text-overlay">Lancelot<br>Additional line of text</div>
+        </div>
+        <div class="dua">
+            <img src="image/gusion.jpg" alt="">
+            <div class="text-overlay">Gusion<br>Additional line of text</div>
+        </div>
+        <div class="tiga">
+            <img src="image/valir.jpg" alt="">
+            <div class="text-overlay">Valir<br>Additional line of text</div>
+        </div>
+        <div class="empat">
+            <img src="image/zilong.jpg" alt="">
+            <div class="text-overlay">Zilong<br>Additional line of text</div>
+        </div>
+        <div class="lima">
+            <img src="image/esme.jpg" alt="">
+            <div class="text-overlay">Esmeralda<br>Additional line of text</div>
+        </div>
+        <div class="enam">
+            <img src="image/guin.jpg" alt="">
+            <div class="text-overlay">Guinevere<br>Additional line of text</div>
+        </div>
+        <div class="tujuh">
+            <img src="image/lunox.jpg" alt="">
+            <div class="text-overlay">Lunox<br>Additional line of text</div>
+        </div>
+        <div class="lapan">
+            <img src="image/lnx.jpg" alt="">
+            <div class="text-overlay">Lynx<br>Additional line of text</div>
+        </div>
+    </div>
+</body>
+</html>
